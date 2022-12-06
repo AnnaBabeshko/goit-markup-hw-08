@@ -1,0 +1,32 @@
+.klient {
+    display: flex;
+    gap: 30px;
+}
+
+.klient__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.klient__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    color: var(--grey-color);
+    transition: color var(--anim-fast);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.klient__icon {
+    fill: currentColor;
+}

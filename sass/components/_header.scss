@@ -1,0 +1,38 @@
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+   
+  .site {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    align-items: center;
+  }
+ 
+  .site__descr {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: color var(--anim-fast);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .icon {
+    fill: currentColor;
+  }
