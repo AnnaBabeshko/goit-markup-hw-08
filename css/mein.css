@@ -30,8 +30,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 address {
@@ -223,33 +229,51 @@ address {
 }
 
 .hiro {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/box4.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/box4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .hiro {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
 }
 
 .hiro__uhdertitle {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hiro__uhdertitle {
+    width: 696px;
+  }
 }
 
 .hiro__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   color: var(--background-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hiro__title {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 .prem {
@@ -393,11 +417,27 @@ address {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 480px;
+  }
 }
 
 .footer {
@@ -846,8 +886,8 @@ button {
 }
 
 .hiro__btn {
-  min-width: 216px;
-  padding: 10px 32px;
+  min-width: 152px;
+  padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -859,6 +899,12 @@ button {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hiro__btn {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
 }
 .hiro__btn:hover, .hiro__btn:focus {
   color: var(--primari-text-color);
