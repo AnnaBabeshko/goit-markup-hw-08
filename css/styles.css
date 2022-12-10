@@ -173,6 +173,11 @@
   }
   .icon {
     fill: currentColor;
+  }
+  .icon-menu {
+    fill: currentColor;
+    background-color: var(#ffffff)
+    vviewBox="0 0 20 20";
   }*/
  /*-------------------------------HIRO------------------*/
   /*.hiro {
