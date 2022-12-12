@@ -252,12 +252,14 @@ address {
   height: 60px;
   border-bottom: 1px solid #ECECEC;
   z-index: 10;
-  padding: 24px 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .header {
     height: 80px;
-    padding: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -277,15 +279,36 @@ address {
   }
 }
 
-.site {
+.site__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .site__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site__list {
+    display: block;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .site__descr {
@@ -306,6 +329,11 @@ address {
 }
 .site__descr:hover, .site__descr:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site__descr {
+    margin-bottom: 10px;
+  }
 }
 
 .icon {
