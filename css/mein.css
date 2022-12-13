@@ -388,11 +388,15 @@ address {
   }
 }
 
-.prem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .prem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .prem__uhdertitle {
@@ -441,7 +445,12 @@ address {
 }
 
 .style {
-  padding-top: 0px;
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .style {
+    display: none;
+  }
 }
 
 .style__title {
@@ -490,11 +499,15 @@ address {
   background-color: var(--discript-background-color);
 }
 
-.work__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .work__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .work__item {
@@ -503,6 +516,23 @@ address {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   background-color: var(--background-color);
+}
+
+@media screen and (max-width: 767px) {
+  .work__item:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .work__cont {
@@ -727,19 +757,29 @@ address {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .klient {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .klient__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
+  height: 92px;
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .klient__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .klient__item {
+    width: calc((100% - 150px) / 5);
+  }
 }
 
 .klient__link {
@@ -754,8 +794,8 @@ address {
           align-items: center;
   border: 1px solid currentColor;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   color: var(--grey-color);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);

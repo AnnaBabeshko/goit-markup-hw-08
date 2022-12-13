@@ -1,6 +1,8 @@
 .prem {
+    @media screen and (min-width: 768px) {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;}
   }
   .prem__uhdertitle {
     width: 270px;
