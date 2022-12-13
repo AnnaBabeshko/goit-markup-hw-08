@@ -1,9 +1,22 @@
 .footer {
     background-color: var(--dark-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    
+    padding: 60px 0;
 }
+
+.container__para {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	
+    @media screen and (min-width: 768px) {
+		display: flex;
+		align-items: baseline;
+	}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}
+
 .footer__text {
     font-weight: 700;
     line-height: calc(16/14);
@@ -11,12 +24,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--background-color);
+
+    @media screen and (max-width: 1199px) {
+		text-align: center;
+	}
 }
 
-.para {
-    display: flex;
-    align-items: baseline;
-}
+
 .footer__icon {
     fill: currentColor;
 }
