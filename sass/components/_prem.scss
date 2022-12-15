@@ -4,10 +4,12 @@
     gap: 30px;
     flex-wrap: wrap;}
   }
-  .prem__uhdertitle {
-    width: 270px;
+  .prem-uhdertitle {
+    width: 100%;
+    align-items: center;
   }
-  .prem__uhdertitle::before {
+  
+  .prem-uhdertitle::before {
     display: block;
     content: " ";
     height: 120px;
@@ -17,9 +19,15 @@
     background-color: var(--discript-background-color);
     margin-bottom: 30px;
   }
-  .prem__antenna::before {
-    background-image: url(../images/icons/antenna.svg);
+  
+  .prem-antenna::before {
+    background-image: url(../images/prem/antenna/antenna\ 1_mob@1x.png);
+    
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/prem/antenna/antenna\ 1_mob@2x.png);
+    }
   }
+  
   .prem__clock::before {
     background-image: url(../images/icons/clock.svg);
   }

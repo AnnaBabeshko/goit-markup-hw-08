@@ -3,9 +3,8 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
-  }
-  @media (max-width: 767px) {
-	.menu {
+  
+  @media screen and (max-width: 767px) {
 		display: none;
 	}
 }
@@ -33,9 +32,8 @@
 	border: none;
 	border-radius: 50%;
 	outline: none;
-	  &:hover,
-	  &:focus {
-		  fill: #2196f3;
+	  &:touch {
+		fill: var(--acent-color);
   }
 	
   @media (min-width: 768px) {
@@ -89,7 +87,7 @@
 	letter-spacing: 0.02em;
 	color: #212121;
     &:hover,
-	  &:focus {
+	&:focus {
 		  fill: #2196f3;
 	  }
 }
